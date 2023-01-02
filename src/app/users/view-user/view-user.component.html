@@ -1,1 +1,7 @@
-<p>view-user works!</p>
+<div class="" *ngIf="userDetails">
+  <p>{{ userDetails.name }}</p>
+</div>
+
+<div *ngIf="isLoading">
+  <p>loading...</p>
+</div>
