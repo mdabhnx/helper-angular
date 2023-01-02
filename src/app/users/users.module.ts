@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -17,6 +18,12 @@ import { MatListModule } from '@angular/material/list';
     DeleteUserComponent,
     ViewUserComponent,
   ],
-  imports: [CommonModule, MatListModule, RouterModule],
+  imports: [
+    CommonModule,
+    MatListModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
 export class UsersModule {}

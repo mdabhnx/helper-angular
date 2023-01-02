@@ -1,1 +1,21 @@
-<p>add-users works!</p>
+<form [formGroup]="addUserFrom" (submit)="addUserToDB()">
+  <input
+    type="text"
+    name="name"
+    formControlName="name"
+    [readOnly]="inProcess"
+  />
+  <input
+    type="eamil"
+    name="email"
+    formControlName="email"
+    [readOnly]="inProcess"
+  />
+  <input
+    type="text"
+    name="phone"
+    formControlName="phone"
+    [readOnly]="inProcess"
+  />
+  <button type="submit">Submit</button>
+</form>

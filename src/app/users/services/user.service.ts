@@ -27,4 +27,13 @@ export class UserService {
       })
     );
   }
+
+  addUser(userPayload: any) {
+    return this.http.post(this.BASE_URL + 'users/', userPayload).pipe(
+      catchError((err) => {
+        console.log(err);
+        return of([]);
+      })
+    );
+  }
 }
