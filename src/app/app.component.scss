@@ -1,0 +1,12 @@
+.flex-container {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.flex-drawer {
+  flex: 0.3;
+}
+
+.flex-content {
+  flex: 0.7;
+}
